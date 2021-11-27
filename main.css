@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    color: white;
+}
+
+body {
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    background-color: #2a2a2a;
+}
+
+h1 {
+    font-size: 1.8vw;
+}
+
+h2 {
+    font-size: 1.6vw;
+}
+
+p {
+    font-size: 0.85vw;
+    font-weight: bold;
+}
+
+.empty-div {
+    min-height: 1vw;
+}
+
+
+.subtitle {
+    font-weight: normal;
+    opacity: 80%;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+#red-div {
+    background-color: #de2b24;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#line {
+    font-size: 30;
+}
+
+#checkboard {
+    width: 60%;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eight-div {
+    background-color: #f35e58;
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    padding: 5% 2.5%;
+}
+
+.eight-div-image {
+    width: 12%;
+    padding: 5%;
+}
+
+.eight-div-title {
+    font-size: 1.4vw;
+}
+
+.eight-div-subtitle {
+    opacity: 90%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+#blue-div {
+    background-color: #1287bf;
+}
+
+#dropdown {
+    transform: rotate(90deg);
+    font-size: 2vw;
+    width: 5vw;
+    height: 5vw;
+    padding: 0;
+    border-radius: 2.5vw;
+    padding-bottom: 0.3%;
+    border: 3px solid white;
+    background: rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+#gray-subtitle{
+    color: #515151;
+}
+
+#submit-form-div {
+    width: 46vw;
+    background: white;
+    position: relative;
+    margin: auto;
+    padding: 3vw 3vw;    
+
+}
+
+#submit-form-div:before {
+    content: '';
+    width: 0;
+    height: 0;
+    top: -2vw;
+    left: 24.5vw;
+    position: absolute;
+    border-right: 1.6vw solid transparent;
+    border-bottom: 2vw solid white;
+    border-left: 1.6vw solid transparent;
+}
+
+.input-parent > input {
+    width: 80%;
+    padding: 0.85vw 1.7vw;
+    border: 2px solid rgba(81, 81, 81, 0.3);
+    border-radius: 5px;
+    color: #515151;
+    margin: 0.5vw;
+    transition: 0.5s;
+    outline: none;
+}
+
+.input-parent > input:focus {
+    border: 2px solid #1287bf;
+}
+
+#submit-button {
+    background-color: #de2b24;
+    border: 0;
+}
+
+#submit-button:hover{
+    background-color: black;
+}
+
+#dropdown-box {
+    display: none;
+}
+
+#close {
+    text-align: center;
+    font-size: 1.5vw;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 1.5vw;
+    border: 2px solid white;
+    position: absolute;
+    top: -1.5vw;
+    right: -1.5vw;
+    background: #de2b24;
+    opacity: 1;
+    padding: 0;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+footer {
+    justify-content: center;
+}
+
+.commutication {
+    display: flex;
+    justify-content: center;
+}
+
+.commutication > div {
+    border: solid #515151;
+    border-radius: 2px;
+    height: 2.5vw;
+    width: 2.5vw;
+    margin: 0.2vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.commutication > div:hover {
+    border: 2px solid #dd2b23;
+}
+
+input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    border: 0px;
+    background-color: #515151;
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+button {
+    padding: 0.85vw 1.7vw;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #515151;
+    background-color: #2a2a2a;
+    border-radius: 3px;
+    font-size: 0.85vw;
+    font-weight: bold;
+    opacity: 90%;
+}
+  
+button:hover {
+    border: 2px solid #dd2b23;
+}
+
+
+.bottom {
+    width: 100%;
+    background-color: #515151;
+}
