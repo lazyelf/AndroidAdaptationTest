@@ -39,9 +39,9 @@ p {
 #red-div {
     background-color: #de2b24;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    margin: auto;
+    display: grid;
+    justify-items: center;
 }
 
 #line {
@@ -49,22 +49,22 @@ p {
 }
 
 #checkboard {
-    width: 60%;
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
+    min-width: 60%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
 }
 
 .eight-div {
     background-color: #f35e58;
     background-size: cover;
     background-position: center;
-    width: 20%;
-    padding: 5% 2.5%;
+    padding: 20% 0;
 }
 
 .eight-div-image {
-    width: 12%;
+    min-width: 12%;
     padding: 5%;
 }
 
@@ -104,8 +104,7 @@ p {
     background: white;
     position: relative;
     margin: auto;
-    padding: 3vw 3vw;    
-
+    padding: 3vw 3vw;
 }
 
 #submit-form-div:before {
@@ -116,7 +115,7 @@ p {
     left: 24.5vw;
     position: absolute;
     border-right: 1.6vw solid transparent;
-    border-bottom: 2vw solid white;
+    border-bottom: 3vw solid white;
     border-left: 1.6vw solid transparent;
 }
 
@@ -169,8 +168,10 @@ footer {
 }
 
 .commutication {
-    display: flex;
-    justify-content: center;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
 }
 
 .commutication > div {
